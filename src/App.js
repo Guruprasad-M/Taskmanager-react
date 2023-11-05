@@ -8,8 +8,8 @@ function App() {
 
  
 
-                                  const [items, setItems] = useState(
-  JSON.parse(localStorage.getItem('todo_list')) || []
+                             const storedItems = JSON.parse(localStorage.getItem('todo_list'));
+const [items, setItems] = useState(storedItems || []);
 );
   );
 
